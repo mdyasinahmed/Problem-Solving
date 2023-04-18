@@ -8,25 +8,19 @@ int main()
     while(totalNumber--)
     {
         scanf("%d", &number);
-        //number 1 2 3 4 5
 
         if(number%2==0)
         {
-            // number = 2
-            evenSum = number+evenSum; // evenSum = 2 + 0
+            evenSum = number+evenSum;
         }
         if(number%2!=0)
         {
-            // number = 1
-            oddSum = number+oddSum; // oddSum = 1 + 0
-            // oddSum+=number;
+            oddSum = number+oddSum;
         }
-
     }
 
     printf("%d\n", evenSum);
     printf("%d\n", oddSum);
-
 
 	return 0;
 }

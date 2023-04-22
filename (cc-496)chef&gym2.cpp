@@ -8,13 +8,17 @@ int main(){
     while(t--){
         cin>>a >>b >>c;
 
-        if(a<=c && a+b<=c){
-            cout<<"2"<<endl;
-        }
         if(a<=c){
-            cout<<"1"<<endl;
+            if(a+b<=c)
+            {
+            cout<<"2"<<endl;
+            }
+            else
+            {
+                cout<<"1"<<endl;
+            }
         }
-        if(a>c && a+b!=c){
+        else{
             cout<<"0"<<endl;
         }
     }

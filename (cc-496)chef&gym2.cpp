@@ -9,9 +9,9 @@ int main(){
         cin>>a >>b >>c;
 
         if(a<=c){
-            if(a+b<=c)
+            if(a<=c && b<=c)
             {
-            cout<<"2"<<endl;
+                cout<<"2"<<endl;
             }
             else
             {

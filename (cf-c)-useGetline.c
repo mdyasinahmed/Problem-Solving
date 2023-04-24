@@ -5,11 +5,15 @@ int main()
 {
     char str[1000];
     gets(str);
-    int a;
+    int a, count;
 
     while(str[a] !="//")
     {
-        puts(str);
+        count++;
+    }
+
+    while(count--){
+        printf("%c\n", str);
     }
 
     return 0;

@@ -12,11 +12,11 @@ int main(void)
         for(j=0;j<n;j++)
         {
             scanf("%d", &a[j]);
-            if(a[j]<k)
+            if(a[j]<=k)
             {
-                amount = a[j];
                 printf("1");
-                amount = a[j] - a[j+1];
+                k = k - a[j];
+
             }
             else
             {

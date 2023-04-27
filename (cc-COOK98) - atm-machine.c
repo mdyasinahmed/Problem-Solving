@@ -15,7 +15,7 @@ int main(void)
             if(a[j]<=k)
             {
                 printf("1");
-                k = k - a[j];
+                k -= a[j];
 
             }
             else

@@ -8,7 +8,7 @@ int main()
     while(t--){
         int n, x, count=0, maxC=0;
         cin>>n;
-        for(int i = 0; i < n; i++)
+        for(int i = 0; i < n; ++i)
         {
             cin>>x;
             if(x==1){
@@ -23,3 +23,5 @@ int main()
 
     return 0;
 }
+
+// https://codeforces.com/problemset/problem/1829/B

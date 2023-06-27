@@ -1,23 +1,24 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 
 int main()
 {
-    int t, x, i, count=0;
-    scanf("%d", &t);
-
+    int t;
+    cin>>t;
     while(t--){
-        scanf("%d", &x);
-
-        int a[x];
-        while(x--){
-            for(i=0;i<x;i++){
-                scanf("%d", &a[i]);
-
-                if((a[i]==a[i+1]) && a[i]==0){
-                    count++;
-                }
+        int n, x, count=0, maxC=0;
+        cin>>n;
+        for(int i = 0; i < n; i++)
+        {
+            cin>>x;
+            if(x==1){
+                count=0;
+            }else{
+                count++;
+                maxC=max(count,maxC);
             }
         }
+        cout<<maxC<<endl;
     }
 
     return 0;
